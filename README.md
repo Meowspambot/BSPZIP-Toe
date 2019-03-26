@@ -13,7 +13,7 @@ Currently only Skyboxs, Textures, Models (including their textures) and Sounds a
 # Setup
 get the latest release of [BSPZIP-Toe](https://github.com/Meowspambot/BSPZIP-Toe/releases) and place it in your games bin folder.
 
-Use the following presets if you've never packed your BSP before. But if you already use BSPZIPWalker you can just replace the exe and params with the preset below
+Use the following presets if you've never packed your BSP before, But if you already use BSPZIPWalker you can just replace the exe and params with the preset below.
 - C:\path\to\BSPZIP-Toe.exe
   - $path\$file.$ext "C:\path\to\custom_assets" $path\$file-filelist.txt
 
