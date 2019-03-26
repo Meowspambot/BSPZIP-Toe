@@ -5,6 +5,11 @@ This python script allows you to specify a VMF file, asset directory and output 
 ![alt text](https://i.imgur.com/ru3CMrD.png)
 > *map in above image has 3 custom textures, the file on the left is packed with BSPZIPWalker and the one on the right is packed with BSPZIP-Toe custom asset directory has 1097 files*
 
+Currently only Skyboxs, Textures, Models (including their textures) and Sounds are packed
+- Asset types planed for the future are
+  - csgo radars
+  - custom overlays (via env_screenoverlay)
+
 # Setup
 - get the latest release of [BSPZIP-Toe](https://github.com/Meowspambot/BSPZIP-Toe/releases)
 
