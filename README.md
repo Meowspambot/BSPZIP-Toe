@@ -3,7 +3,7 @@ Cross references VMF contents for clean packing into your BSP!
 
 This python script allows you to specify a VMF file, asset directory and output file to print a list of **ONLY USED ASSESTS** for BSPZIP to use.
 ![alt text](https://i.imgur.com/ru3CMrD.png)
-> *map in above image has 3 custom textures, the file on the right is packed with BSPZIPWalker and the one on the left is packed with BSPZIP-Toe custom asset directory has 1097 files*
+> *map in above image has 3 custom textures, the file on the left is packed with BSPZIPWalker and the one on the right is packed with BSPZIP-Toe custom asset directory has 1097 files*
 
 # Setup
 - get the latest release of [BSPZIP-Toe](https://github.com/Meowspambot/BSPZIP-Toe/releases)
