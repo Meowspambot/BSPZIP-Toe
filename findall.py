@@ -41,7 +41,6 @@ def parsefile(input_file,compare_dir,output):
 					addfile(reldir,entry,outputdirs)
 					break
 		if temp[1] == 'model' and len(temp[3].split('.')) >= 2:
-			#print(temp)
 			temp2 = temp[3].split('.')
 			if temp2[1] == 'mdl':
 				mdldir = (temp2[0])
@@ -125,13 +124,10 @@ def parsemdltextures(input_file,compare_dir,materialdir):
 			for i in range(len(rawmdl)-entrypoint):
 				bytebuffer.append(rawmdl[i+entrypoint])
 			decoded = "".join(map(chr, bytebuffer))
-			print('1',decoded)
 			decoded = decoded.strip('\x00')
 			decoded = decoded.split('\x00')[1:]
-			print('2',decoded)
 			for i,thing in enumerate(decoded):
 				if not thing == decoded[-1]:
-					print(compare_dir + '\\materials\\' + decoded[-1] + decoded[i] + '.vtf')
 					if (compare_dir + '\\materials\\' + decoded[-1] + decoded[i] + '.vtf') in materialdir:
 						mdlmaterial.append('materials\\' + decoded[-1] + decoded[i]) #decoded[i] = 'materials\\' + decoded[-1] + decoded[i]
 				else:
@@ -152,12 +148,12 @@ def addfile(filepathrel,filepath,dirlist=[''],nametable=['']):
 	return dirlist
 	
 def parsedir(root_dir):
-	coolgay = []
+	walkdir = []
 	for root, subdirs, files in os.walk(root_dir):
 		for filename in files:
 			file_path = os.path.join(root, filename)
-			coolgay.append(file_path)
-	return coolgay
+			walkdir.append(file_path)
+	return walkdir
 
 def writefile(to_write,name):
 	to_write.pop(0)
