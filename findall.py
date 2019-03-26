@@ -103,6 +103,7 @@ def parsemdltextures(input_file,compare_dir,materialdir):
 	bytebuffer = []
 	entrypointfound = False
 	hookstr = commonfixdir(input_file,mdlnamelen+1,'\\')
+	hookstr2 = commonfixdir(input_file,mdlnamelen+1,'/')
 	print(hookstr)
 	with open(input_file,'rb') as f:
 		rawmdl = f.read()
@@ -114,7 +115,7 @@ def parsemdltextures(input_file,compare_dir,materialdir):
 				bytebuffer.append(rawmdl[(len(rawmdl)-i)+j])
 			except:
 				pass
-			if ("".join(map(chr, bytebuffer))).lower() == hookstr.lower():
+			if ("".join(map(chr, bytebuffer))).lower() == hookstr.lower() or ("".join(map(chr, bytebuffer))).lower() == hookstr2.lower():
 				entrypoint = len(rawmdl)-i
 				entrypointfound = True
 				print("MYBODYISREADY",entrypoint)
