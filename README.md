@@ -6,8 +6,9 @@ This python script allows you to specify a VMF file, asset directory and output 
 > *map in above image has 3 custom textures, the file on the right is packed with BSPZIPWalker and the one on the left is packed with BSPZIP-Toe custom asset directory has 1097 files*
 
 # Setup
-- Replace "C:\path\to\custom_assets" with the folder that *contains* your materials/models/sound folders
+- get the latest release of [BSPZIP-Toe](https://github.com/Meowspambot/BSPZIP-Toe/releases)
 
+- Replace "C:\path\to\custom_assets" with the folder that *contains* your materials/models/sound folders
 - C:\path\to\BSPZIPTiptoe.exe
   - $path\$file.$ext "C:\path\to\custom_assets" $path\$file-filelist.txt
   
